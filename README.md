@@ -1,4 +1,4 @@
 # TicTacToe
-DOWNLOAD Main.java and TicTacToe.java
-Run both in IDE of your choice.
-Enjoy!
+DOWNLOAD JAVA FOLDER AND IMPORT IT INTO YOUR IDE.
+
+ENJOY!
