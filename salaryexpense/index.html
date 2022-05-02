@@ -3,7 +3,7 @@
 <head>
     
     <script src ="script.js" defer></script>
-    <title>Salary Calculator</title>
+    <title>Tracker</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -21,5 +21,51 @@
             </ul>
         </div>
     </nav>
+
+    <div class="mytabs">
+        <input type="radio" id="tabdaily" name="mytabs" checked="checked">
+        <label for="tabdaily">Daily</label>
+        <div class="tab">
+            <div class="card">
+            <div class="salary" id="dailysalary"> Daily Salary Calculator </div> <br>
+            Enter Hourly Pay:<input type="text" id="dailyhourly" value=""><br><br> 
+            <div class = "today">Hours worked:<input type="text" id="dailytoday"></div> <br>
+            <button class="generateButton" onclick="daily()">Generate</button> 
+            <div id="amountdaily">
+                
+
+            </div>
+        </div>
+            
+        </div>
+        <input type="radio" id="tabweekly" name="mytabs">
+        <label for="tabweekly">Weekly</label>
+        <div class="tab">
+                <div class="card">
+                <div class="salary" id="salary"> Weekly Salary Calculator  <br> <br>
+                    Enter Hourly Pay:<input type="text" id="hourly" value=""><br><br> </div>
+                    What many hours did you work? <br><br>
+                    <form id="form">
+                    <div class = "days">Monday:<input type="text" id="monday"> </div> <br>
+                    <div class = "days">Tuesday:<input type="text" id="tuesday"> </div> <br>
+                    <div class = "days">Wednesday:<input type="text" id="wednesday"> </div> <br> 
+                    <div class = "days">Thursday:<input type="text" id="thursday"> </div> <br> 
+                    <div class = "days">Friday:<input type="text" id="friday"> </div> <br> 
+                    <div class = "days">Saturday:<input type="text" id="saturday"> </div> <br> 
+                    <div class = "days">Sunday:<input type="text" id="sunday"> </div> <br> 
+                </form>
+                    <button class="generateButton" onclick="weekly()">Generate</button> 
+                    <div id="amountweekly">
+                    
+
+                    </div>
+            </div>
+        </div>
+    
+        <input type="radio" id="tabmonthly" name="mytabs">
+        <label for="tabmonthly">Monthly</label>
+        <div class="tab">
+      </div>
+    
 </body>
 </html>

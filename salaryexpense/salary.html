@@ -22,8 +22,12 @@
         </div>
     </nav>
 
-    <div class="salary" id="salary"> Salary Calculator  <br> <br>
-        Enter Hourly Pay:<input type="text" id="hourly" value=""><br><br>
+
+
+
+    <div class="card">
+    <div class="salary" id="salary"> Weekly Salary Calculator  <br> <br>
+        Enter Hourly Pay:<input type="text" id="hourly" value=""><br><br> </div>
         What many hours did you work? <br><br>
         <form id="form">
         <div class = "days">Monday:<input type="text" id="monday"> </div> <br>
@@ -34,14 +38,11 @@
         <div class = "days">Saturday:<input type="text" id="saturday"> </div> <br> 
         <div class = "days">Sunday:<input type="text" id="sunday"> </div> <br> 
     </form>
-        <button onclick="calculate()">Generate</button> 
-    </div> 
-    
+        <button onclick="weekly()">Generate</button> 
+        <div id="amount">
+        </div>
+</div>
 
-
-
-
-    </div>
         
     
 </body>
