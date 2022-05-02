@@ -16,8 +16,9 @@
         </a>
         <div class="navbar-links">
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="salary.html">Salary</a></li>
-                <li><a href="#">Expenses</a></li>
+                <li><a href="expenses.html">Expenses</a></li>
             </ul>
         </div>
     </nav>
@@ -25,23 +26,62 @@
 
 
 
-    <div class="card">
-    <div class="salary" id="salary"> Weekly Salary Calculator  <br> <br>
-        Enter Hourly Pay:<input type="text" id="hourly" value=""><br><br> </div>
-        What many hours did you work? <br><br>
-        <form id="form">
-        <div class = "days">Monday:<input type="text" id="monday"> </div> <br>
-        <div class = "days">Tuesday:<input type="text" id="tuesday"> </div> <br>
-        <div class = "days">Wednesday:<input type="text" id="wednesday"> </div> <br> 
-        <div class = "days">Thursday:<input type="text" id="thursday"> </div> <br> 
-        <div class = "days">Friday:<input type="text" id="friday"> </div> <br> 
-        <div class = "days">Saturday:<input type="text" id="saturday"> </div> <br> 
-        <div class = "days">Sunday:<input type="text" id="sunday"> </div> <br> 
-    </form>
-        <button onclick="weekly()">Generate</button> 
-        <div id="amount">
+    <div class="mytabs">
+        <input type="radio" id="tabdaily" name="mytabs" checked="checked">
+        <label for="tabdaily">Daily</label>
+        <div class="tab">
+            <div class="stuffinside">
+            <div class="salary" id="dailysalary"> Daily Salary Calculator </div> <br>
+            Enter Hourly Pay:<input type="number" name = "salary_input" id="dailyhourly" value=""><br><br> 
+            <div class = "today">Hours worked:<input type="number" name = "salary_input" id="dailytoday"></div> <br>
+            <button class="generateButton" onclick="daily()">Calculate</button> 
+            <div id="amountdaily">
+                
+
+            </div>
         </div>
-</div>
+            
+        </div>
+        <input type="radio" id="tabweekly" name="mytabs">
+        <label for="tabweekly">Weekly</label>
+        <div class="tab">
+                <div class="stuffinside">
+                <div class="salary" id="weeklysalary"> Weekly Salary Calculator  <br> <br>
+                    Enter Hourly Pay:<input type="number" name = "salary_input" id="hourly" value=""><br><br> </div>
+                    How many hours did you work? <br><br>
+                    <form id="form">
+                    <div class = "days">Monday:<input type="number" name = "salary_input" id="monday"> </div> <br>
+                    <div class = "days">Tuesday:<input type="number" name = "salary_input" id="tuesday"> </div> <br>
+                    <div class = "days">Wednesday:<input type="number" name = "salary_input" id="wednesday"> </div> <br> 
+                    <div class = "days">Thursday:<input type="number" name = "salary_input" id="thursday"> </div> <br> 
+                    <div class = "days">Friday:<input type="number" name = "salary_input" id="friday"> </div> <br> 
+                    <div class = "days">Saturday:<input type="number" name = "salary_input" id="saturday"> </div> <br> 
+                    <div class = "days">Sunday:<input type="number" name = "salary_input" id="sunday"> </div> <br> 
+                </form>
+                    <button class="generateButton" onclick="weekly()">Calculate</button> 
+                    <div id="amountweekly">
+                    
+
+                    </div>
+            </div>
+        </div>
+    
+        <input type="radio" id="tabmonthly" name="mytabs">
+        <label for="tabmonthly">Monthly</label>
+        <div class="tab">
+        <div class="stuffinside">
+        <div class="salary" id="monthlysalary"> Monthly Salary Calculator <br> <br>
+            Enter Hourly Pay:<input type="number" name = "salary_input" id="monthly" value=""><br><br>
+            Enter Days Worked:<input type="number" name = "salary_input" id="dayswork" value=""><br><br> 
+            Enter Hours Worked:<input type="number" name = "salary_input" id="hourswork" value=""><br><br> </div>
+            <button class="generateButton" onclick="monthly()">Calculate</button> 
+                    <div id="amountmonthly">
+                    
+
+                    </div>
+            
+
+      </div>
 
         
     

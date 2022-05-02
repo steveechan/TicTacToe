@@ -46,12 +46,18 @@ body {
     text-align: center;
 }
 
+#expenseCalc {
+    display: none;
+}
+#expense_form {
+    display: none;
+}
 #amountdaily {
     display: none;
     text-align: center;
 }
 
-.card {
+.stuffinside {
     position: relative;
     font-weight: bold;
     width: 320px;
@@ -117,7 +123,17 @@ body {
     color: black;
 }
 
-input {
+input[name="salary_input"] {
     float:right;
-    width:10%;
+    width:15%;
+}
+
+input[name="price1"] {
+    float:right;
+    width:15%;
+}
+
+input[name="expenseinput"] {
+    float:right;
+    width:15%;
 }

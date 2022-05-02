@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src ="script.js" defer></script>
+    <title>Salary Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="tracker"> Tracker </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="salary.html">Salary</a></li>
+                <li><a href="expenses.html">Expenses</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mytabs">
+        <input type="radio" id="expensedaily" name="mytabs" checked="checked">
+        <label for="expensedaily">Daily</label>
+        <div class="tab">
+            <div class="stuffinside">
+            <div class="expense" id="dailyexpense"> Daily Expense Calculator </div> <br>
+            How many expenses do you have?:<input type="number" name = "expenseinput" id="numberofexpense" value=""><br><br>
+            <form id="expense_form">
+            <div class="row" id="row1"> 
+                <div class="col">
+                    <input type="text" name="expense1" class="form-control" placeholder="Expense">
+                    <input type="number" name="price1" class="form-control" placeholder="$">
+                </div>
+            </div>
+        </form>
+        <button class="generateButton" id="expenseGenerator" onclick="add_more_field()">Generate Fields</button>
+        <button class="generateButton" id="expenseCalc" onclick="expense()">Calculate</button> 
+        <div id="expensecalculations">
+                    
+
+        </div>
+        </div>
+        </div>
+           
+
+    
+
+
+</body>
+</html>
