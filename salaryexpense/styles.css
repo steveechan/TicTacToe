@@ -109,3 +109,8 @@ body {
     cursor: pointer;
     color: black;
 }
+
+input {
+    float:right;
+    width:10%;
+}
