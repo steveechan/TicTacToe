@@ -141,18 +141,32 @@ input[name="expenseinput"] {
     width:15%;
 }
 
-.networth {
+.info
+{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+}
+
+.info .box {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    float: left;
+    margin: 15px;
+    box-sizing: border;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.info .box p {
+    font-size: 25px;
     font-weight: bold;
-    font-size: 20px;
-    width: 300px;
-    height: 50px;
-    border-radius: 1px;
-    position: fixed;
-    top: 150px;
-    left: 50px;
-    background: #C9D6FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
 }
