@@ -29,7 +29,7 @@
 
     <div class="notepad" id="notepad_container">
         Name: <input type="text" id="name" name="name"> <br>  <br>
-        Networth: <input type="number" id="networth" name="networth">
+        Networth: <input type="number" id="networth" name="name">
     <button id="save"> 
         Save
     </button>
@@ -121,10 +121,10 @@
         <div class="modal">
             Start Time:<input type="time" name = "start" id="timestart" value=""><br>
             End Time:<input type="time" name = "end" id="timestop" value="">
-            <button id="timeCalculation" onclick="calculateTime()">
+            <button id="timeCalculation" name ="timebutton" onclick="calculateTime()">
                 Calculate Time Worked
             </button>
-            <div class=" timeworked"id="timeworked">
+            <div class="timeworked"id="timeworked">
 
             </div>
         </div>
