@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -153,20 +154,40 @@ input[name="expenseinput"] {
     position: relative;
     width: calc(400px - 30px);
     height: calc(300px - 30px);
-    background: #373B44;  /* fallback for old browsers */
+    background: #47a386;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     float: left;
     margin: 15px;
     box-sizing: border;
     box-sizing: border-box;
-    overflow: hidden;
     border-radius: 10px;
     text-align: center;
-    font-size: 10px;
+    transition: ease-in-out .5s;
 }
 
 .info .box p {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
+    transition: ease-out 1s;
 }
+
+.modal-container {
+    display: none;
+}
+
+button {
+    background-color: rgba(0, 0, 255, 0.13);
+    border: 0;
+    border-radius: 5px;
+}
+.modal-container {
+    position: fixed;
+    display: flex;
+    opacity: 0;
+}
+
+.modal-container.show {
+    opacity: 1;
+}
+

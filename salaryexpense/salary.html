@@ -72,14 +72,36 @@
             Enter Hours Worked:<input type="number" name = "salary_input" id="hourswork" value=""><br><br> </div>
             <button class="generateButton" onclick="monthly()">Calculate</button> 
                     <div id="amountmonthly">
-                    
-
                     </div>
-            
 
       </div>
+      </div>
+      </div>
 
-        
+
+
+
+
+      <button id="open">
+        Time Calculations
+    </button>
+
+    
+    
+    <div class="modal-container"
+    id="modal_container">
+        <div class="modal">
+            Start Time:<input type="time" name = "start" id="timestart" value=""><br>
+            End Time:<input type="time" name = "end" id="timestop" value=""><br>
+            <button id="timeCalculation" onclick="calculateTime()">
+                Calculate Time Worked
+            </button>
+            <div id="timeworked">
+
+            </div>
+        </div>
+    </div>
+
     
 </body>
 </html>
