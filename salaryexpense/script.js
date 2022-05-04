@@ -115,6 +115,6 @@ open.addEventListener('click', () => {
 
             let totalTime = hourDiff + minuteDiff/60;
             let p1 = document.getElementById("timeworked");
-            p1.innerText = "Time worked: " + totalTime.toFixed(2) + "hours";
+            p1.innerText = "Time worked: " + totalTime.toFixed(2) + " hours";
              
     }
