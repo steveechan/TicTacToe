@@ -86,13 +86,6 @@ function expense() {
     p2.style.display = "block";
 }
 
-const open = document.getElementById('open');
-const modal_container = document.getElementById('modal_container');
-
-open.addEventListener('click', () => {
-    modal_container.classList.add('show');
-});
-
     function calculateTime() {
             let valuestart = document.getElementById('timestart').value;
             let valuestop = document.getElementById('timestop').value;
@@ -118,3 +111,35 @@ open.addEventListener('click', () => {
             p1.innerText = "Time worked: " + totalTime.toFixed(2) + " hours";
              
     }
+
+
+const open = document.getElementById('open');
+const modal_container = document.getElementById('modal_container');
+    
+open.addEventListener('click', () => {
+    modal_container.classList.add('show');
+});
+
+const notepadOpen = document.getElementById('notepadopen');
+const notepad_container = document.getElementById('notepad_container');
+const close = document.getElementById('close');
+
+notepadOpen.addEventListener('click', () => {
+    notepad_container.classList.add('show');
+});
+
+close.addEventListener('click', () => {
+    notepad_container.classList.remove('show');
+})
+
+const networth = document.getElementById("networth");
+const networthinfo = document.getElementById("networthinfo");
+const save = document.getElementById('save');
+const user_info = document.getElementById("displayuser");
+const displaypanel = document.getElementById("display_panel");
+const name = document.getElementById("name");
+const username = document.getElementById("username");
+save.addEventListener('click', () => {
+    networthinfo.value = networth.value;
+    username.value = name.value;
+});

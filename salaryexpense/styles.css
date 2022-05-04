@@ -190,5 +190,16 @@ button {
 
 .modal-container.show {
     opacity: 1;
+    transition: ease-in 1s;
 }
+
+.notepad {
+    opacity: 0;
+}
+
+.notepad.show {
+    opacity: 1;
+    transition: ease-in 1s;
+}
+
 
