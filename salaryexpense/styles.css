@@ -202,4 +202,6 @@ button {
     transition: ease-in 1s;
 }
 
-
+.timeworked {
+    font-weight: bold;
+}
