@@ -4,7 +4,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
+// @ is an aliasaaaa
 
 export default {
   name: 'HomeView',
